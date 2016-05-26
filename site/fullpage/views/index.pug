@@ -2,18 +2,34 @@ doctype html
 html(lang="en")
   head
     meta(charset="UTF-8")
-    title Semantic-UI
-    link(rel="stylesheet" type="text/css" href="../../lib/bower_components/semantic/dist/semantic.min.css")
+    title FullPage
+    link(rel="stylesheet" type="text/css" href="../../lib/bower_components/fullpage.js/dist/jquery.fullpage.min.css")
     link(rel="stylesheet" type="text/css" href="public/css/sass.min.css")
   body
-    .ui.grid
-        .four.wide.column
-            a(href="javascript:void(0);") column1
-        .four.wide.column
-            a(href="javascript:void(0);") column2
-        .four.wide.column
-            a(href="javascript:void(0);") column3
-        .four.wide.column
-            a(href="javascript:void(0);") column4
+    #menu
+      ul.clearfix
+         li.active(data-menuanchor='page1')
+            a(href='#page1')  page1
+         li(data-menuanchor='page2')
+            a(href='#page2')  page2
+         li(data-menuanchor='page3')
+            a(href='#page3')  page3
+         li(data-menuanchor='page4')
+            a(href='#page4')  page4
+         li(data-menuanchor='page5')
+            a(href='#page5')  page5
+         li(data-menuanchor='page6')
+            a(href='#page6')  page6
+    #fullpage
+      .section page1
+      .section page2
+      .section
+         .slide   page3-tag1
+         .slide   page3-tag2
+         .slide   page3-tag3
+      .section page4
+      .section page5
+      .section page6
     script(src="../../lib/bower_components/jquery/dist/jquery.min.js")
-    script(src="../../lib/bower_components/semantic/dist/semantic.min.js")
+    script(src="../../lib/bower_components/fullpage.js/dist/jquery.fullpage.min.js")
+    script(src="public/js/config.min.js")

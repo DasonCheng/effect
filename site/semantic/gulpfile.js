@@ -20,7 +20,6 @@ gulp.task('pug', function() {
         .pipe(pug({ pretty: true }))
         .pipe(gulp.dest(paths.pug[1]));
 });
-
 gulp.task('sass', function() {
     return gulp.src(paths.sass[0])
         .pipe(sourcemaps.init())
