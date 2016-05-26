@@ -1,12 +1,13 @@
 $(document).ready(function() {
+    //fullPage
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips:  ['fullPage.js', 'Powerful', 'Amazing', 'Simple', 'Powerful', 'Amazing'],
+        navigationTooltips: ['fullPage.js', 'Powerful', 'Amazing', 'Simple', 'Powerful', 'Amazing'],
         showActiveTooltip: false,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -17,7 +18,7 @@ $(document).ready(function() {
         autoScrolling: true,
         fitToSection: true,
         fitToSectionDelay: 1000,
-        scrollBar: false,
+        scrollBar: true,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
         loopBottom: false,
@@ -38,7 +39,7 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        sectionsColor : ['#254875', '#00FF00', '#254587', '#695684', '#254875', '#00FF00'],
+        sectionsColor: ['#254875', '#00FF00', '#254587', '#695684', '#254875', '#00FF00'],
         paddingTop: '3em',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
@@ -50,11 +51,11 @@ $(document).ready(function() {
         slideSelector: '.slide',
 
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
-        afterRender: function(){},
-        afterResize: function(){},
-        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        onLeave: function(index, nextIndex, direction) {},
+        afterLoad: function(anchorLink, index) {},
+        afterRender: function() {},
+        afterResize: function() {},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {}
     });
 });
