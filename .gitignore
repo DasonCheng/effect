@@ -1,4 +1,4 @@
 lib/bower_components
 node_modules
-/site/**/public
+site/**/public
 *.html
